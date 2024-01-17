@@ -7,7 +7,7 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-	<ItemGroup>
-		<PackageReference Include="CatraProto.Client" Version="1.1.0" />
-	</ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CatraProto.Client\CatraProto.Client.csproj" />
+  </ItemGroup>
 </Project>

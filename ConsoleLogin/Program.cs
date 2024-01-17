@@ -9,7 +9,15 @@ using Serilog.Events;
 using Logger = CatraProto.Client.Logger;
 
 var logger = Logger.CreateDefaultLogger(new LoggingLevelSwitch(LogEventLevel.Verbose));
-var apiSettings = new ApiSettings(YOUR_API_ID, YOUR_API_HASH, "CatraProto", "1.0", "en", "android_x", "en", "1.0");
+var apiSettings = new ApiSettings(
+    1537800,                            // YOUR API ID 
+    "c8286429c0a97ae3645ff5341499f1a0", //YOUR API HASH 
+    "CatraProto", 
+    "1.0", 
+    "en", 
+    "android_x", 
+    "en", 
+    "1.0");
 var sessionSettings = new SessionSettings(new FileSerializer("data/MySession.catra"), new DatabaseSettings($"data/MySession.db", 50), "MySession");
 var connectionSettings = new ConnectionInfo(IPAddress.Parse("149.154.167.50"), 443, 2, false);
 var settings = new ClientSettings(sessionSettings, apiSettings, new ConnectionSettings(connectionSettings, 86400, 30));
