@@ -12,7 +12,7 @@ It also implements many aspects of the API so **you won't have to take care of a
 
 ## Status of my fork
 - .NET 6 detected, not .NET Standard 1.4 or even 2.0...
-- Building ok but Login failed (oblosete?). Game over :)
+- Building ok but Login failed (code oblolete?). Game over :)
 
 ## Getting started
 To get started, please visit the [Getting Started](https://catraproto.github.io/docs/configuration/index.html) section of the documentation.
